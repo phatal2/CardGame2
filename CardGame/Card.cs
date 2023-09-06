@@ -26,7 +26,7 @@ namespace CardGame
             switch (val)
             {
                  
-                case 1: result = "Ace"; 
+                case 1: result = "A"; 
                     break;
                 case 2:
                 case 3:
