@@ -39,7 +39,19 @@ namespace CardGame
         }
         public void Shuffle() 
         { 
+            Random rnd = new Random();
+            for (int i = 0; i < cards.Length; i++)
+            {
+                int j = rnd.Next(i, cards.Length);
+                Swap(i, j);
+            }
 
+        }
+        private void Swap(int i, int j)
+        {
+            Card c = cards[j];
+            cards[j] = cards[i];
+            cards[i] = c;
         }
         public Card Deal() 
         {
