@@ -16,7 +16,14 @@
             //Console.WriteLine(deck);
             Player player = new Player("noam");
             Deck deck = new Deck();
+            deck.Shuffle();
+            player.Take(deck.Deal());
+            player.Take(deck.Deal());
+            int total = 0;
+            for (int i = 0; i < 5; i++)
+            {
 
+            }
         }
     }
 }

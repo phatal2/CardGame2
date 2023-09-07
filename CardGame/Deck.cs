@@ -42,8 +42,7 @@ namespace CardGame
             Random rnd = new Random();
             for (int i = 0; i < cards.Length; i++)
             {
-                int j = rnd.Next(i, cards.Length);
-                Swap(i, j);
+                Swap(i, rnd.Next(i, cards.Length));
             }
 
         }
